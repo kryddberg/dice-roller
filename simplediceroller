@@ -1,0 +1,22 @@
+import java.util.Random;
+
+public class DiceRoller2 {
+    public static void main(String[] args) {
+        System.out.println("""
+
+                --- DICE ROLLING PROGRAM ---
+                """);
+
+// Empty variables for the dices (int, since the dices only can display integers)
+        int dice1;
+        int dice2;
+
+            Random n1 = new Random();
+            Random n2 = new Random();
+            dice1 = n1.nextInt(6) + 1;
+            dice2 = n2.nextInt(6) + 1;
+            int result = dice1 + dice2;
+            System.out.println("Dice 1 shows the number " + dice1 + " and dice 2 shows the number " + dice2 + ", for a total of " + result + ".");
+
+    }
+}
