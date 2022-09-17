@@ -1,0 +1,23 @@
+import java.util.Random;
+
+public class DiceRoller {
+    public static void main(String[] args) {
+        System.out.println("\n" + "--- DICE ROLLING PROGRAM ---");
+        System.out.println("(It will continue to throw until the dices show the same number)" + "\n");
+
+// Variabler för tärningarna (int, då tärningen endast kan visa heltal)
+        int dice1;
+        int dice2;
+
+        do {
+            Random n1 = new Random();
+            Random n2 = new Random();
+            dice1 = n1.nextInt(6) + 1;
+            dice2 = n2.nextInt(6) + 1;
+            int result = dice1 + dice2;
+            System.out.println("Dice 1 shows " + dice1 + " and dice 2 shows " + dice2 + ", for a total of " + result + ".");
+        } while (dice1 != dice2);
+        
+    }
+}
+
