@@ -5,7 +5,7 @@ public class DiceRoller {
         System.out.println("\n" + "--- DICE ROLLING PROGRAM ---");
         System.out.println("(It will continue to throw until the dices show the same number)" + "\n");
 
-// Variabler för tärningarna (int, då tärningen endast kan visa heltal)
+// Variables for the dices (int, because a dice can only display integers)
         int dice1;
         int dice2;
 
